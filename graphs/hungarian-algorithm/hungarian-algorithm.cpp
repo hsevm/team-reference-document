@@ -1,3 +1,5 @@
+// maximum bipartite matching problem for a weighted graph.
+
 namespace hungary {
 const int N = 210;
 

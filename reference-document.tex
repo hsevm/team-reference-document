@@ -42,15 +42,17 @@
 \section{Some useful stuff}
 \subsection{Fast I/O}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./basic/fast-io/io.cpp}
-\subsection{Java template}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{java}{./basic/java-template/Template.java}
 \subsection{Pragmas}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./basic/pragmas/opt.cpp}
 \section{Data structures}
+\subsection{Dynamic convex hull trick}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/convex-hull-trick/convex-hull-trick.cpp}
 \subsection{Fenwick tree}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/fenwick/fenwick.cpp}
 \subsection{Hash table}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/hash-table/hash-table.cpp}
+\subsection{Persistent Segment Tree}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/persistent-segment-tree/persistent-segment-tree..cpp}
 \subsection{Ordered set and bitset}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/std/std.cpp}
 \section{Geometry}
@@ -58,8 +60,6 @@
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/common-tangents/common-tangents.cpp}
 \subsection{Convex hull 3D in $O(n ^ 2)$}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/convex-hull-3d/convex-hull-3d.cpp}
-\subsection{Dynamic convex hull trick}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/convex-hull-trick/convex-hull-trick.cpp}
 \subsection{Halfplanes intersection}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/halfplanes-intersection/halfplanes-intersection.cpp}
 \subsection{Minimal covering disk}
@@ -92,27 +92,10 @@ $$
 \subsection{Draw svg pictures}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/svg-draw/svg-draw.cpp}
 \section{Graphs}
-\subsection{2-Chinese algorithm}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/2-chinese/2-chinese.cpp}
-\subsection{Dominator tree}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/dominator-tree/dominator-tree.cpp}
 \subsection{General matching}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/general-matching/general-matching.cpp}
-\subsection{Gomory-Hu tree}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/gomory-hu/gomory-hu.cpp}
 \subsection{Hungarian algorithm}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/hungarian-algorithm/hungarian-algorithm.cpp}
-\subsection{Link-Cut Tree}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/link-cut-tree/link-cut-tree.cpp}
-\subsection{Push-Relabel}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/push-relabel/push-relabel.cpp}
-\subsection{Smith algorithm (Game on cyclic graph)}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/smith/smith.cpp}
-\subsection{Stoer-Vagner algorithm (Global min-cut)}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/stoer-vagner/stoer-vagner.cpp}
-\section{Matroids}
-\subsection{Matroids intersection}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./matroids/matroids-intersection/matroids-intersection.cpp}
 \section{Numeric}
 \subsection{Berlekamp-Massey Algorithm}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./numeric/berlekamp/berlekamp.cpp}
@@ -300,18 +283,12 @@ $100$ & \multicolumn{5}{|l|}{$190\,569\,292$} \\
 \end{tabular}
 \end{center}
 \section{Strings}
-\subsection{Duval algorithm (Lyndon factorization)}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/duval/duval.cpp}
-\subsection{Palindromic tree}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/eertree/eertree.cpp}
 \subsection{Manacher's algorithm}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/manacher/manacher.cpp}
+\subsection{Min Cyclic Shift O(n)}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/min-cyclic_shift/min-cyclic-shift.cpp}
 \subsection{Suffix array + LCP}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/suff-array/suff-array.cpp}
-\subsection{Suffix automaton}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/suff-automaton/suff-automaton.cpp}
-\subsection{Suffix tree}
-\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/suff-tree/suff-tree.cpp}
 
 
 \onecolumn
