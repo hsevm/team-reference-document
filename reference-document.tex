@@ -25,7 +25,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{ITMO University 1: Insert your name (Budin, Korobkov, Naumov)}
+\lhead{JUB 4: Looking for a job (Elizbarashvili, Kholkin, Leontev)}
 \rhead{Page \thepage\ of \pageref{LastPage}}
 \lfoot{Generated \today}
 
@@ -57,6 +57,13 @@
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/persistent-segment-tree/persistent-segment-tree..cpp}
 \subsection{Ordered set and bitset}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./data-structures/std/std.cpp}
+\section{DP optimizations}
+\subsection{Problem Statement}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./dp-optimizations/_statement/_statement.cpp}
+\subsection{Divide and Conquer optimization}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./dp-optimizations/divide-and-conquer/divide-and-conquer.cpp}
+\subsection{Knuth optimization}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./dp-optimizations/knuth/knuth.cpp}
 \section{Geometry}
 \subsection{Common tangents of two circles}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/common-tangents/common-tangents.cpp}
@@ -92,12 +99,18 @@ $$
 \subsection{Draw svg pictures}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./geometry/svg-draw/svg-draw.cpp}
 \section{Graphs}
+\subsection{HLD}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/HLD/hld.cpp}
+\subsection{Dinic's algorithm}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/dinic/dinic.cpp}
 \subsection{General matching}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/general-matching/general-matching.cpp}
 \subsection{Hungarian algorithm}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/hungarian-algorithm/hungarian-algorithm.cpp}
 \subsection{Kuhn and Min Vertex Covering}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/kuhn-and-min-covering/kuhn-and-min-covering.cpp}
+\subsection{Mincost}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./graphs/mincost/mincost.cpp}
 \section{Numeric}
 \subsection{Burnside's lemma}
 $$|X/G| = \frac{1}{|G|}\sum\limits_{g \in G}|St(g)|$$
@@ -283,6 +296,8 @@ $100$ & \multicolumn{5}{|l|}{$190\,569\,292$} \\
 \end{tabular}
 \end{center}
 \section{Strings}
+\subsection{Aho-Corasick}
+\inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/aho-corasick/aho-corasick.cpp}
 \subsection{Manacher's algorithm}
 \inputminted[mathescape, breaklines, breakafter=(, tabsize=2, frame=lines, showtabs, tab=|\ , tabcolor=lightgray]{c++}{./strings/manacher/manacher.cpp}
 \subsection{Min Cyclic Shift O(n)}
@@ -292,7 +307,6 @@ $100$ & \multicolumn{5}{|l|}{$190\,569\,292$} \\
 
 
 \onecolumn
-\includepdf[pages={1, 2}, pagecommand={\pagestyle{fancy}}]{integral-table}
 
 % \begin{tikzpicture} [hexa/.style= {shape=regular polygon,
 %                                    regular polygon sides=6,
